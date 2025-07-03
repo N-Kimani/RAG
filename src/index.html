@@ -1,13 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>RAG</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html>
+<title>RAG</title>
+<div class="h-screen bg-lime-500 place-content-center place-items-center">
+  <div class="border-2 rounded-xl bg-white shadow-xl/30 h-100 w-100 p-7 text-xs">
+    <p class="font-semibold">Website Summarizer</p>
+    <p class="my-1 text-[11px]">Paste a site URL, then ask anything you'd like to know about it!</p>
+    <hr class="my-5">
+    <label for="url" class="opacity-55">Url</label><br>
+    <textarea id="url" name="url" rows="1" cols="50" class="w-full rounded-xl p-2 border focus:outline-lime-500"></textarea><br>
+    <label for="prompt" class="opacity-55">Prompt</label><br>
+    <textarea id="prompt" name="prompt" rows="4" cols="50" class="w-full rounded-xl p-2 border focus:outline-lime-500"></textarea><br>
+    <label for="tone" class="opacity-55">Tone</label>
+    <select name="tone" id="tone" class="my-5">
+    <option value="academic">Academic</option>
+    <option value="casual">Casual</option>
+    </select>
+    <button class="border-2 border-transparent hover:border-lime-500 rounded-xl py-1 cursor-pointer font-semibold px-30 my-5 ">Generate Answer</button>
+  </div>
+</div>
